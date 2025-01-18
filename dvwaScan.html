@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>localhost / 127.0.0.1 port 80</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>127.0.0.1</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>localhost</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>80</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td>Apache/2.4.57 (Debian)</td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="http://localhost:80/DVWA/">http://localhost:80/DVWA/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="http://127.0.0.1:80/DVWA/">http://127.0.0.1:80/DVWA/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/: The anti-clickjacking X-Frame-Options header is not present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/">http://localhost:80/DVWA/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/">http://127.0.0.1:80/DVWA/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/">http://localhost:80/DVWA/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/">http://127.0.0.1:80/DVWA/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/'>https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>OPTIONS</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>OPTIONS: Allowed HTTP Methods: POST, OPTIONS, HEAD, GET .</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/">http://localhost:80/DVWA/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/">http://127.0.0.1:80/DVWA/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/config/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/config/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/config/">http://localhost:80/DVWA/config/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/config/">http://127.0.0.1:80/DVWA/config/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/config/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/config/: Configuration information may be available remotely.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/config/">http://localhost:80/DVWA/config/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/config/">http://127.0.0.1:80/DVWA/config/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/tests/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/tests/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/tests/">http://localhost:80/DVWA/tests/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/tests/">http://127.0.0.1:80/DVWA/tests/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/tests/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/tests/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/tests/">http://localhost:80/DVWA/tests/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/tests/">http://127.0.0.1:80/DVWA/tests/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/database/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/database/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/database/">http://localhost:80/DVWA/database/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/database/">http://127.0.0.1:80/DVWA/database/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/database/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/database/: Database directory found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/database/">http://localhost:80/DVWA/database/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/database/">http://127.0.0.1:80/DVWA/database/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/docs/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/docs/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/docs/">http://localhost:80/DVWA/docs/</a><br>
+      <a href="http://127.0.0.1:80/DVWA/docs/">http://127.0.0.1:80/DVWA/docs/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/login.php</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/login.php: Admin login page/section found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/login.php">http://localhost:80/DVWA/login.php</a><br>
+      <a href="http://127.0.0.1:80/DVWA/login.php">http://127.0.0.1:80/DVWA/login.php</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/.git/index</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/.git/index: Git Index file may contain directory listing information.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/.git/index">http://localhost:80/DVWA/.git/index</a><br>
+      <a href="http://127.0.0.1:80/DVWA/.git/index">http://127.0.0.1:80/DVWA/.git/index</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/.git/HEAD</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/.git/HEAD: Git HEAD file found. Full repo details may be present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/.git/HEAD">http://localhost:80/DVWA/.git/HEAD</a><br>
+      <a href="http://127.0.0.1:80/DVWA/.git/HEAD">http://127.0.0.1:80/DVWA/.git/HEAD</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/.git/config</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/.git/config: Git config file found. Infos about repo details may be present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/.git/config">http://localhost:80/DVWA/.git/config</a><br>
+      <a href="http://127.0.0.1:80/DVWA/.git/config">http://127.0.0.1:80/DVWA/.git/config</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/.gitignore</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/.gitignore: .gitignore file found. It is possible to grasp the directory structure.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/.gitignore">http://localhost:80/DVWA/.gitignore</a><br>
+      <a href="http://127.0.0.1:80/DVWA/.gitignore">http://127.0.0.1:80/DVWA/.gitignore</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/DVWA/.dockerignore</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/DVWA/.dockerignore: .dockerignore file found. It may be possible to grasp the directory structure and learn more about the site.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://localhost:80/DVWA/.dockerignore">http://localhost:80/DVWA/.dockerignore</a><br>
+      <a href="http://127.0.0.1:80/DVWA/.dockerignore">http://127.0.0.1:80/DVWA/.dockerignore</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>2025-01-15 09:18:58</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2025-01-15 09:19:15</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>17 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>7850 requests, 0 errors, 16 findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-h http://localhost/DVWA -o dvwaScan.html -Format htm</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Wed Jan 15 09:18:57 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Wed Jan 15 09:19:15 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td>18 seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
